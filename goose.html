@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+    $(".mascot").click(function(){
+    $("#voting").show();
+    $("#nextdepart").show();
+    });
+  });
+  </script>
+
+</head>
+
+<body style="font-family: Tw Cen MT;">
+
+<nav class="navbar nav1">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <img src="img/quantiphi.png" class="img-responsive" style="width: 150px;" alt="Quantiphi">
+    </div>
+  </div>    
+</nav>
+
+
+<div class="container">
+  <div class="col-sm-8">
+    <p style="font-size: 30px;">Department: Facilities</p>
+    <p style="font-size: 18px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat urna nec quam convallis, ut mollis dui vulputate. Sed id turpis vitae lacus porta aliquet lobortis quis nisi. Ut eget mollis odio</p>
+  </div>
+   
+  <div class="col-sm-4" id="nextdepart" style="display: none; padding-top: 50px; letter-spacing: 2px; cursor: not-allowed; ">
+   <a href="#" class="btn anbutton1" style="background-color: green; " role="button">MOVE ON TO THE NEXT DEPARTMENT</a>
+  </div>
+</div>
+
+<div class="container" style="padding-left:25px;">
+  <h4>Choose your mascot for this department<span style="color: grey;"> (hover over each mascot to know it’s meaning)</span></h4>
+  <div class="panel panel-default">
+    <div class="panel-body">
+      <ul class="nav navbar-nav">
+       <li><img src="img/oyster.png" alt="Oyster" class="mascot" id="oyster" data-toggle="tooltip" data-placement="bottom" title="My work/the attributes initiative is not having direction and needs greater mentorship or leadership"><p class="mascotcaption">World is my Oyster</p></li>
+
+       <li><img src="img/cat.png" alt="Cat" class="mascot" id="cat" data-toggle="tooltip" data-placement="bottom" title="My work/the attributes initiative is not having direction and needs greater    mentorship or leadership"><p class="mascotcaption">Cat's Meow</p></li>
+
+       <li><img src="img/whale.png" alt="Whale" class="mascot" id="whale" data-toggle="tooltip" data-placement="bottom" title="My work/the attributes 
+            initiative is not having direction and needs greater mentorship or leadership"><p class="mascotcaption">Whale of a time</p></li>
+
+       <li><img src="img/elephant.png" alt="Elephant" class="mascot" id="elephant" data-toggle="tooltip" data-placement="bottom" title="My work/the attributes
+            initiative is not having direction and needs greater mentorship or leadership"><p class="mascotcaption">Elephant in the room</p></li>
+
+       <li><img src="img/fish.png" alt="Fish" class="mascot" data-toggle="tooltip" id="fish" data-placement="bottom" title="My work/the attributes
+            initiative is not having direction and needs greater mentorship or leadership"><p class="mascotcaption">Dead Fish</p></li>
+
+       <li><img src="img/goose.png" alt="Goose" class="mascot" data-toggle="tooltip" id="goose" data-placement="bottom" title="My work/the attributes
+            initiative is not having direction and needs greater mentorship or leadership"><p class="mascotcaption">Wild Goose Chase</p></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="container" id="voting" style="display: none;">
+  <div class="col-sm-4">
+    <p><b>Overall Rating for Facilities <span style="color: grey;">(1-lowest, 5-highest)</span></b></p>
+ 
+     <!-- Rating Stars Box -->
+    <div class='rating-stars text-left'>
+      <ul id='stars'>
+        <li class='star' title='Poor' data-value='1'>
+         <i class='fa fa-star fa-fw'></i>
+        </li>
+        <li class='star' title='Fair' data-value='2'>
+          <i class='fa fa-star fa-fw'></i>
+        </li>
+        <li class='star' title='Good' data-value='3'>
+          <i class='fa fa-star fa-fw'></i>
+        </li>
+        <li class='star' title='Excellent' data-value='4'>
+         <i class='fa fa-star fa-fw'></i>
+        </li> 
+        <li class='text-message'></li>
+      </ul>
+    </div>
+
+    <p><b>Share your reasons for selecting <span style="color: red"> Wild Goose Chase</span></b></p>
+   
+    <form class="check">
+
+     <div class="checkbox">
+      <label style="margin-left: 15px; margin-bottom: 5px;"><input type="checkbox">Lorem ipsum dolor sit amet.<span class="checkmark"></span></label>
+     </div>
+
+     <div class="checkbox">
+      <label style="margin-left: 15px; margin-bottom: 5px;"><input type="checkbox">Consectetur adipiscing elit.<span class="checkmark"></span></label>
+     </div>
+
+     <div class="checkbox">
+      <label style="margin-left: 15px; margin-bottom: 5px;"><input type="checkbox">Donec accumsan.<span class="checkmark"></span></label>
+     </div>
+
+     <div class="checkbox">
+      <label style="margin-left: 15px; margin-bottom: 5px;"><input type="checkbox">Amet consectetur adipiscing elit.<span class="checkmark"></span></label>
+     </div>
+     
+     
+
+    </form>
+    
+  </div>
+
+  <div class="col-sm-4">
+    <p><b>Any more reasons?</b></p>
+      <form>
+          <div class="form-group">            
+              <input type="text" class="form-style">
+              <input type="text" class="form-style">
+              <input type="text" class="form-style">
+              <input type="text" class="form-style">
+              <input type="text" class="form-style">
+          </div>
+     </form>
+  </div>
+
+  <div class="col-sm-4">
+    <p><b>Suggestions</b></p>
+     <form>
+      <div class="form-group">
+       <textarea name="suggestion" class="form-control" rows="8" id="suggestion"></textarea>
+      </div>
+     </form>
+  </div>
+</div>
+
+</body>
+</html>
